@@ -1,0 +1,28 @@
+﻿@model FibMVC.Biz.Fib
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <h1>Welcome to the web page to print a fibonacci sequence.</h1>
+        <ul>
+
+           @foreach(var item in (List<int>)ViewData["fifteenFibs"])
+            {
+
+                <li>item</li>
+
+            }
+        </ul>
+    </div>
+</body>
+</html>
