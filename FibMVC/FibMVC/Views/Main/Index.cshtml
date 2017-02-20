@@ -15,13 +15,11 @@
     <div> 
         <h1>Welcome to the web page to print a fibonacci sequence.</h1>
         <ul>
-
-           @foreach(var item in (List<int>)ViewData["fifteenFibs"])
-            {
-
-                <li>item</li>
-
-            }
+           @for (int i = 0; i < 15; i++)
+           {
+               List<int> list = (List<int>)ViewData["fifteenFibs"];
+               <li>@list[i]</li>
+           }
         </ul>
     </div>
 </body>
